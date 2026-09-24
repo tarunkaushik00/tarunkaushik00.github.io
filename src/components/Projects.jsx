@@ -43,11 +43,11 @@ const projects = [
   },
   {
   title: "Restaurant Website",
-  image: restaurantImage, // Apne assets folder se restaurant image import karke yahan pass karein
+  image: restaurantImage, 
   description:
     "A modern, responsive food and dining website featuring interactive food menus, reservation layouts, and a clean user interface.",
   tech: ["HTML", "CSS", "JavaScript"],
-  live: "https://tarunkaushik00.github.io/resturant-website/", // Agar GitHub Pages ya Netlify par live kiya ho
+  live: "https://tarunkaushik00.github.io/resturant-website/", 
   github: "https://github.com/tarunkaushik00/resturant-website",
   },
 ];
