@@ -2,6 +2,7 @@ import netflixImage from "../assets/Projects/netflix.png";
 import xCloneImage from "../assets/Projects/x-clone.png";
 import todoImage from "../assets/Projects/todo.png";
 import spotifyImage from "../assets/Projects/spotify.png";
+import restaurantImage from "../assets/Projects/restaurant.png";
 
 const projects = [
   {
@@ -39,6 +40,15 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     live: "https://spotifyclonetk.netlify.app/",
     github: "https://github.com/tarunkaushik00/spotify-clone",
+  },
+  {
+  title: "Restaurant Website",
+  image: restaurantImage, // Apne assets folder se restaurant image import karke yahan pass karein
+  description:
+    "A modern, responsive food and dining website featuring interactive food menus, reservation layouts, and a clean user interface.",
+  tech: ["HTML", "CSS", "JavaScript"],
+  live: "https://tarunkaushik00.github.io/resturant-website/", // Agar GitHub Pages ya Netlify par live kiya ho
+  github: "https://github.com/tarunkaushik00/resturant-website",
   },
 ];
 
