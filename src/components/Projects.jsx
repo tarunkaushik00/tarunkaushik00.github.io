@@ -1,7 +1,7 @@
 import netflixImage from "../assets/Projects/netflix.png";
 import xCloneImage from "../assets/Projects/spotify.png";
 import todoImage from "../assets/Projects/todo.png";
-import spotifyImage from "../assets/Projects/spotify.png";
+import spotifyImage from "../assets/Projects/x-clone.png";
 
 const projects = [
   {
