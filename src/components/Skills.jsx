@@ -5,7 +5,7 @@ const skills = [
   },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "Vite", "VS Code", "Netlify"],
+    items: ["Git", "GitHub", "Vite", "VS Code", "Netlify", "Chatgpt", "Gemini"],
   },
   {
     category: "Web Development",
