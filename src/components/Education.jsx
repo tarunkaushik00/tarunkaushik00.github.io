@@ -3,19 +3,16 @@ const education = [
     degree: "Bachelor of Computer Applications (BCA)",
     institute: "IP College Campus 2, Bulandshahr",
     year: "2022 – 2025",
-    score: "70%",
   },
   {
     degree: "Intermediate — CBSE",
     institute: "Dewan Public School",
     year: "2022",
-    score: "70%",
   },
   {
     degree: "High School — CBSE",
     institute: "Saraswati Bal Mandir Sr. Sec. School",
     year: "2020",
-    score: "60%",
   },
 ];
 
@@ -61,13 +58,6 @@ function Education() {
                     {item.year}
                   </span>
                 </div>
-
-                <p className="mt-5 text-sm text-gray-500">
-                  Percentage:{" "}
-                  <span className="font-medium text-gray-300">
-                    {item.score}
-                  </span>
-                </p>
               </div>
             </div>
           ))}
