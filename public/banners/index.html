@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brew Lane Ad Banners | Tarun Kaushik</title>
+<meta name="description" content="Sample animated HTML5 ad banners for a fictional coffee brand, in 300x250, 300x600 and 970x250.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5F3;--fg:#0F1A16;--muted:#52625A;--line:#D3DDD8;--accent:#12372A}
+@media (prefers-color-scheme: dark){:root{--bg:#0C1411;--fg:#E8F0EB;--muted:#9AAEA4;--line:#233229;--accent:#7FD1A5}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6;padding:32px 20px 56px}
+.wrap{max-width:1040px;margin:0 auto}
+.mark{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted)}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(32px,6vw,56px);line-height:1.05;margin:12px 0;letter-spacing:-.02em}
+p.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+.shelf{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.slot{display:flex;flex-direction:column;gap:10px;max-width:100%}
+.cap{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+.scroll{overflow-x:auto;max-width:100%;padding-bottom:6px}
+.ad{position:relative;overflow:hidden;background:#12372A;font-family:'DM Sans',sans-serif;flex-shrink:0}
+.ad .brand{font-size:11px;font-weight:700;letter-spacing:3px;color:#F4A63A}
+.ad .head{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:#fff;line-height:1.03}
+.ad .cta{display:inline-block;background:#F4A63A;color:#12372A;font-weight:700;border-radius:999px;text-decoration:none;white-space:nowrap}
+.ad svg{position:absolute}
+@keyframes rise{0%{opacity:0;transform:translateY(8px)}50%{opacity:.9}100%{opacity:0;transform:translateY(-10px)}}
+.steam{animation:rise 2.8s ease-in-out infinite}
+.steam2{animation:rise 2.8s ease-in-out .9s infinite}
+@media (prefers-reduced-motion: reduce){.steam,.steam2{animation:none;opacity:.7}}
+.back{display:inline-block;margin-top:40px;color:var(--accent);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="mark">Tarun Kaushik · Frontend developer</span>
+  <h1>Brew Lane ad banners</h1>
+  <p class="lead">Sample banners for a fictional coffee brand, made in three standard ad sizes. They are plain HTML and CSS, with a steam animation on the cup.</p>
+
+  <div class="shelf">
+    <div class="slot">
+      <div class="ad" style="width:300px;height:250px;padding:22px 20px">
+        <div class="brand">BREW LANE</div>
+        <div class="head" style="font-size:31px;width:175px;margin-top:10px">Your first cup is on us.</div>
+        <a class="cta" href="#" style="position:absolute;left:20px;bottom:22px;font-size:14px;padding:12px 20px">Get my free coffee</a>
+        <svg aria-hidden="true" viewBox="0 0 120 120" style="right:-6px;bottom:4px;width:138px;height:138px">
+          <path class="steam" d="M48 40 C42 32 54 28 48 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7"></path>
+          <path class="steam2" d="M64 40 C58 32 70 28 64 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7"></path>
+          <ellipse cx="58" cy="98" rx="46" ry="9" fill="#0C2A20"></ellipse>
+          <path d="M18 52 H98 V70 C98 90 84 100 58 100 C32 100 18 90 18 70 Z" fill="#F6EFE3"></path>
+          <ellipse cx="58" cy="52" rx="40" ry="8" fill="#7A4A2B"></ellipse>
+          <path d="M98 58 C116 56 116 82 96 82" fill="none" stroke="#F6EFE3" stroke-width="7" stroke-linecap="round"></path>
+        </svg>
+      </div>
+      <span class="cap">300 × 250</span>
+    </div>
+
+    <div class="slot">
+      <div class="ad" style="width:300px;height:600px;padding:32px 24px;display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <div class="brand" style="font-size:12px">BREW LANE</div>
+          <div class="head" style="font-size:48px;margin-top:16px">Your first cup is on us.</div>
+          <div style="font-size:16px;line-height:1.45;color:#CFE3D8;width:230px;margin-top:16px">Morning rush? Skip the queue and grab a fresh cup on your way.</div>
+        </div>
+        <div style="position:relative;height:200px">
+          <svg aria-hidden="true" viewBox="0 0 120 120" style="left:50%;margin-left:-100px;bottom:0;width:200px;height:200px">
+            <path class="steam" d="M48 40 C42 32 54 28 48 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7"></path>
+            <path class="steam2" d="M64 40 C58 32 70 28 64 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7"></path>
+            <ellipse cx="58" cy="98" rx="46" ry="9" fill="#0C2A20"></ellipse>
+            <path d="M18 52 H98 V70 C98 90 84 100 58 100 C32 100 18 90 18 70 Z" fill="#F6EFE3"></path>
+            <ellipse cx="58" cy="52" rx="40" ry="8" fill="#7A4A2B"></ellipse>
+            <path d="M98 58 C116 56 116 82 96 82" fill="none" stroke="#F6EFE3" stroke-width="7" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <a class="cta" href="#" style="text-align:center;font-size:17px;padding:16px 20px">Get my free coffee</a>
+      </div>
+      <span class="cap">300 × 600</span>
+    </div>
+
+    <div class="slot" style="width:100%">
+      <div class="scroll">
+        <div class="ad" style="width:970px;height:250px;padding:0 56px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+          <div style="width:470px">
+            <div class="brand" style="font-size:12px">BREW LANE</div>
+            <div class="head" style="font-size:50px;margin-top:12px">Your first cup is on us.</div>
+            <div style="font-size:16px;color:#CFE3D8;margin-top:12px">Morning rush? Skip the queue and grab a fresh cup.</div>
+          </div>
+          <svg aria-hidden="true" viewBox="0 0 120 120" style="position:static;width:190px;height:190px;flex-shrink:0">
+            <path class="steam" d="M48 40 C42 32 54 28 48 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7"></path>
+            <path class="steam2" d="M64 40 C58 32 70 28 64 18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.7"></path>
+            <ellipse cx="58" cy="98" rx="46" ry="9" fill="#0C2A20"></ellipse>
+            <path d="M18 52 H98 V70 C98 90 84 100 58 100 C32 100 18 90 18 70 Z" fill="#F6EFE3"></path>
+            <ellipse cx="58" cy="52" rx="40" ry="8" fill="#7A4A2B"></ellipse>
+            <path d="M98 58 C116 56 116 82 96 82" fill="none" stroke="#F6EFE3" stroke-width="7" stroke-linecap="round"></path>
+          </svg>
+          <a class="cta" href="#" style="font-size:18px;padding:18px 28px">Get my free coffee</a>
+        </div>
+      </div>
+      <span class="cap">970 × 250</span>
+    </div>
+  </div>
+
+  <a class="back" href="https://tarunkaushik00.github.io/">See my full portfolio</a>
+</div>
+</body>
+</html>
