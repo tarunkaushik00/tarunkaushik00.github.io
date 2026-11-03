@@ -13,12 +13,15 @@ function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/70 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
-        
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/70 backdrop-blur-xl">
+      <nav
+        aria-label="Main navigation"
+        className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10"
+      >
         <a
           href="#home"
           className="text-xl font-bold tracking-wide sm:text-2xl"
+          aria-label="Tarun Kaushik - Home"
         >
           Tarun<span className="text-cyan-400">.</span>
         </a>
@@ -36,12 +39,14 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((open) => !open)}
           className="rounded-lg border border-white/10 p-2 text-xl md:hidden"
-          aria-label="Toggle menu"
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen ? "✕" : "☰"}
         </button>
@@ -49,7 +54,10 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="border-t border-white/10 bg-black/95 px-5 py-5 md:hidden">
+        <div
+          id="mobile-navigation"
+          className="border-t border-white/10 bg-black/95 px-5 py-5 md:hidden"
+        >
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a

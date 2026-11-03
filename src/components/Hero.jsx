@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, FaArrowDown } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaArrowDown, FaInstagram } from "react-icons/fa";
 import tarunPhoto from "../assets/tarun.jpg";
 
 function Hero() {
@@ -12,16 +12,17 @@ function Hero() {
       <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2">
         <div>
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
-            Frontend / Web Developer
+            Frontend Developer
           </p>
 
           <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-7xl">
-            Hi, I'm <span className="text-cyan-400">Tarun Kaushik</span>
+            Hi, I’m <span className="text-cyan-400">Tarun Kaushik</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg">
-            BCA graduate focused on creating responsive, modern and
-            user-friendly web experiences using modern frontend technologies.
+            BCA graduate (2025) building responsive, interactive web
+            experiences with React.js, JavaScript, HTML5, CSS3, and Tailwind
+            CSS.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -34,8 +35,8 @@ function Hero() {
             </a>
 
             <a
-              href="./resume.pdf"
-              download="Tarun-Resume.pdf"
+              href="/resume.pdf"
+              download="Tarun-Kumar-Kaushik-Resume.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"
             >
               Download Resume
@@ -52,6 +53,16 @@ function Hero() {
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-gray-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"
             >
               <FaGithub size={19} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/_tarun__kaushik__?psln=MXIwNDQ0bjZrdm5lcA=="
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-gray-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"
+            >
+              <FaInstagram size={18} />
             </a>
 
             <a
@@ -75,8 +86,8 @@ function Hero() {
             <div className="relative h-64 w-64 overflow-hidden rounded-full border border-cyan-400/30 bg-white/5 shadow-[0_0_80px_rgba(34,211,238,0.15)] sm:h-80 sm:w-80">
               <img
                 src={tarunPhoto}
-                alt="Tarun Kaushik"
-                className="relative h-64 w-64 overflow-hidden rounded-full border border-cyan-400/30 bg-white/5 shadow-[0_0_80px_rgba(34,211,238,0.15)] transition duration-500 hover:-translate-y-2 sm:h-80 sm:w-80"
+                alt="Tarun Kumar Kaushik, Frontend Developer"
+                className="h-full w-full object-cover transition duration-500 hover:scale-105"
               />
             </div>
 
